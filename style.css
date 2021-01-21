@@ -37,6 +37,8 @@ body{
     padding: 0 80px;
     font-weight: bold;
     font-family: 'Staatliches', cursive;
+    animation: moverIzquierda 1s ease-in;
+
 
 }
 
@@ -76,13 +78,18 @@ body{
     cursor: pointer;
     display: none;
     color: orange;
+
 }
 
 ul.show{
     top: 65px;
 }
 
-
+#carrito i{
+    display: inline-block;
+    color: orange;
+    font-size: 25px;
+}
 
 .main{
     display: flex;
@@ -103,7 +110,8 @@ ul.show{
     letter-spacing: 2px;
     font-weight: bold;
     background: #00000028;
-    
+    animation: moverDerecha 1s ease-in;
+
 }
 .main p{
     font-size: 1.6em;
@@ -112,6 +120,7 @@ ul.show{
     color: aliceblue;
     font-weight: bold;
     background: #00000050;
+    animation: arriba 1s ease-in;
 
 }
 span{
@@ -148,14 +157,15 @@ span{
     border-radius: 20px;
     border: none;
     border-left: 2px solid rgb(255, 133, 19);
-
 }
 .card img{
     border-radius: 20px;
 }
 .card h2{
+    margin-top: 10px;
     color: #ffc500;
     font-family: 'Staatliches', cursive;
+    letter-spacing: 2px;
 
 }
 .card__items{
@@ -170,19 +180,22 @@ span{
     width: 30%;
     border-radius: 10px;
     background: #c21500;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #ffc500, #c21500);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #ffc500, #c21500); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, #ffc500, #c21500);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffc500, #c21500); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border: none;
     margin-bottom: 10px;
     color: aliceblue;
     font-family: 'Staatliches', cursive;
-
+    letter-spacing: 2px;
 }
 
+
 .card__button:hover{
-    padding: 15px;
-    transition: .4s;
-    text-transform: uppercase;
+    background: #c213009a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffc400b0, #c21300c2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffc400a1, #c21300a8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    letter-spacing: 3px;
+    font-weight: 300;
 }
 
 .card__img{
@@ -194,7 +207,7 @@ background: linear-gradient(to right, #ffc500, #c21500); /* W3C, IE 10+/ Edge, F
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: black;
+    background: #191919;
     border-bottom: 1px solid rgb(255, 133, 19);
 }
 .phones{
@@ -204,12 +217,16 @@ background: linear-gradient(to right, #ffc500, #c21500); /* W3C, IE 10+/ Edge, F
     justify-content: center;
     width: 90%;
     margin: 10px;
-    background: rgba(255, 180, 81, 0.753);
+    background: rgba(255, 180, 81, 0.712);
     border-radius: 10px;
     font-weight: bold;
     box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.9);
     border-left: 1px solid aliceblue;
+    animation: arriba 1s ease-in;
 
+}
+.phones:hover{
+    background: rgb(251, 155, 28);
 }
 
 .phones h3{
@@ -218,6 +235,46 @@ background: linear-gradient(to right, #ffc500, #c21500); /* W3C, IE 10+/ Edge, F
 }
 .phones p{
     margin: 10px;
+}
+.logos1 i{
+    margin: 10px 10px;
+    font-size: 25px;
+}
+.piza{
+    color: orange;
+}
+.beer{
+    color: rgb(207, 181, 32);
+}
+.ice{
+    color: lightblue;
+}
+.nosotros{
+    text-align:justify;
+    width: 100%;
+    background: aliceblue;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+    font-weight: bold;
+    background: #191919;
+}
+.n2{
+    margin: 10px 15px;
+    font-size: 25px;
+    animation: moverDerecha 1s ease-in;
+
+}
+.np{
+    margin-top: 5px;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 25px;
+    animation: moverIzquierda 1s ease-in;
+
 }
 .footer{
     width: 100%;
@@ -230,6 +287,7 @@ background: linear-gradient(to right, #ffc500, #c21500); /* W3C, IE 10+/ Edge, F
     background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    margin-top: auto;
     height: 200px;
     font-family: 'Staatliches', cursive;
+    animation: moverIzquierda 1s ease-in;
 
 }
 .footer__items{
@@ -250,34 +308,71 @@ background: linear-gradient(to right, #ffc500, #c21500); /* W3C, IE 10+/ Edge, F
 .icons{
     font-size: 25px;
     transition: .4s all;
-
 }
 #fb{
     color: rgb(62, 111, 218);
     margin: 5px;
+    display: inline-block;
 }
 #wp{
     color: rgb(14, 214, 14);
     margin: 5px;
+    display: inline-block;
 }
 
 #ig{
     color:#FC466B;
     border-radius: 2px;
     margin: 5px;
+    display: inline-block;
+
 }
 #fb:hover{
-    background: aliceblue;
     border-radius: 50%;
+    font-size: 35px;
 }
 #wp:hover{
-    background: aliceblue;
     border-radius: 50%;
+    font-size: 35px;
 
 }
 #ig:hover{
-    background: aliceblue;
     border-radius: 50%;
+    font-size: 35px;
+}
+
+@keyframes moverIzquierda{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes moverDerecha{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes arriba{
+    0%{
+        opacity: 0;
+        transform: translateY(120px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
 }
 @media screen and (min-width: 768px){
     .container-card{
@@ -292,7 +387,6 @@ background: linear-gradient(to right, #ffc500, #c21500); /* W3C, IE 10+/ Edge, F
         justify-content: center;
         align-items: center;
         width: 100%;
-        background: black;
     }
     
 }
@@ -345,7 +439,12 @@ background: linear-gradient(to right, #ffc500, #c21500); /* W3C, IE 10+/ Edge, F
         font-size: 25px;
         padding-left: 25px;
     }
-    
+    .container-card .card{
+        margin: 15px;
+    }
+    .redes{
+        margin-top: 15px;
+    }
 }
 
 @media screen and (max-width: 858px) and (orientation: landscape){
@@ -355,6 +454,9 @@ background: linear-gradient(to right, #ffc500, #c21500); /* W3C, IE 10+/ Edge, F
     .menu_items{
         overflow: scroll;
         height: calc(100% - 120px);
+    }
+    .redes{
+        margin-top: 15px;
     }
 }
 
@@ -369,7 +471,6 @@ background: linear-gradient(to right, #ffc500, #c21500); /* W3C, IE 10+/ Edge, F
     .contacto{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        background: black;
         height: 400px;
     }
     .phones{
