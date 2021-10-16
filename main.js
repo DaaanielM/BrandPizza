@@ -10,7 +10,7 @@ addEventListener('DOMContentLoaded', () => {
     }
 }); 
 
-console.log('Brand Code - Facebook & Instagram')
+console.log('Brand Code - Facebook & Instagram');
 
 /* function pyramid(numPisos){
     for(let i = 0; i < numPisos; i++){
